@@ -25,7 +25,7 @@ workflow "on pull request merge, delete the branch" {
 }
 
 action "branch cleanup" {
-  uses = "jessfraz/branch-cleanup-action@master"
+  uses = "elnic/branch-cleanup-action@master"
   secrets = ["GITHUB_TOKEN"]
   env = {
     BRANCH = "master"
